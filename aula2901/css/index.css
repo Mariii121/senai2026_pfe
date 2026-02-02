@@ -1,0 +1,39 @@
+:root{
+    --cor-fundo-pagina: rgb(133, 144, 178);
+    --cor-texto-principal: rgb(120, 135, 190);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+
+.container-pagina{
+    width: min(1100pc, 90%);
+    margin: 0 auto;
+}
+.cabecalho-principal{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     text-align: center;
+     background-color: linear-grandient();
+     padding: clamp(2rem, 5vw, 5rem, 0);
+}
+
+.cabecalho-principal__titulo{
+    font-size: 18pt;
+    color: var(--cor-texto-principal);
+    margin: 0 0 1.5rem;
+}
+ .cabecalho-principal__subtitulo{
+    font-size: 14pt;
+    color: var(--cor-texto-principal);
+    margin: 0 0 1.5rem;
+ }
