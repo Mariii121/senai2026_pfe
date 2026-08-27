@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seção de Notícias</title>
+<style>
+  /* Estilos comuns */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .theme-toggle {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .news-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .news-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .news-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .news-card-content {
+    padding: 15px;
+  }
+
+  .news-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+  }
+
+  .news-card p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  /* Tema claro */
+  body.light {
+    background-color: #f4f4f4;
+    color: #222;
+  }
+
+  body.light .news-card {
+    background-color: #fff;
+    color: #222;
+  }
+
+  body.light .theme-toggle {
+    background-color: #222;
+    color: #fff;
+  }
+
+  /* Tema escuro */
+  body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  body.dark .news-card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  body.dark .theme-toggle {
+    background-color: #e0e0e0;
+    color: #121212;
+  }
+
+</style>
+</head>
+<body class="light">
+
+<button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+
+<section class="news-section">
+  <div class="news-card">
+    <img src="https://static.historiadomundo.com.br/2019/12/nascimento-jesus.jpg" alt="Notícia 1">
+    <div class="news-card-content">
+      <h3>Visita dos 3 magos</h3>
+      <p>A imagem mostra os Três Reis Magos reverenciando e ofertando presentes ao Menino Jesus, fazendo parte da representação tradicional do nascimento de Cristo no Presépio cristão.</p>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <img src="https://s4.static.brasilescola.uol.com.br/be/2024/03/tres-cruzes-em-frente-a-um-por-do-sol-e-vistas-da-perspectiva-interna-de-uma-caverna-em-referencia-a-ressurreicao-de-cristo.jpg" alt="Notícia 2">
+    <div class="news-card-content">
+      <h3>A ressurreição</h3>
+      <p>Três cruzes no alto de uma colina, iluminadas pelo pôr do sol, vistas a partir de uma entrada de caverna ou sepulcro. A luz dourada do céu contrastando com a sombra da caverna cria um efeito visual dramático e simbólico.</p>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <img src="https://imagedelivery.net/V8zMeKfR8LeSztBOh_sYwA/fd79b662-a8f7-4d7e-cb4f-5590ed5abd00/large" alt="Notícia 3">
+    <div class="news-card-content">
+      <h3>Jesus ressuscita Lázaro</h3>
+      <p>Jesus chama Lazáro para sair, enquanto Marta, Maria e outras pessoas observam a cena com surpresa e emoção. A cena simboliza o poder de Jesus sobre a morte e sua promessa de vida eterna.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('light');
+    body.classList.toggle('dark');
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* ===== PÁGINA ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+
+  background: linear-gradient(135deg, #dbeafe, #bae6fd);
+}
+
+/* ===== CARD ===== */
+.container-cep {
+  width: 400px;
+  max-width: 90%;
+
+  padding: 35px;
+
+  background: white;
+
+  border: 2px solid #0284c7;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  box-sizing: border-box;
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+  margin: 0 0 25px;
+
+  text-align: center;
+
+  color: #0369a1;
+
+  font-size: 28px;
+}
+
+/* ===== FORMULÁRIO ===== */
+.form-cep {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+/* ===== LABEL ===== */
+.form-cep label {
+  color: #0c4a6e;
+
+  font-weight: bold;
+
+  margin-top: 5px;
+}
+
+/* ===== INPUT ===== */
+.form-cep input {
+  width: 100%;
+
+  padding: 12px;
+
+  box-sizing: border-box;
+
+  border: 2px solid #bae6fd;
+  border-radius: 10px;
+
+  background: #f8fcff;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.3s;
+}
+
+.form-cep input:focus {
+  border-color: #0284c7;
+
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+/* ===== BOTÃO ===== */
+.form-cep button {
+  width: 100%;
+
+  margin-top: 10px;
+
+  padding: 13px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #0284c7;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.form-cep button:hover {
+  background: #0369a1;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 12px rgba(3, 105, 161, 0.3);
+}
+
+/* ===== RESULTADO ===== */
+.resultado {
+  margin-top: 25px;
+
+  padding: 20px;
+
+  background: #f0f9ff;
+
+  border: 2px solid #7dd3fc;
+
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  box-sizing: border-box;
+}
+
+/* Cada informação */
+.resultado p {
+  margin: 0;
+
+  padding: 11px;
+
+  background: white;
+
+  border: 1px solid #bae6fd;
+
+  border-radius: 8px;
+
+  color: #0c4a6e;
+
+  font-size: 15px;
+}
+
+/* ===== ERRO ===== */
+.erro {
+  margin-top: 15px;
+
+  padding: 10px;
+
+  text-align: center;
+
+  color: #dc2626;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+}

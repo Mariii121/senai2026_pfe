@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e4e6eb;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 10px 40px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-left h2 {
+  color: #b5bec8;
+}
+
+.nav-left input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  background: #2a2a2a;
+  color: #fff;
+  width: 250px;
+}
+
+.nav-right span {
+  margin-left: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nav-right span:hover {
+  opacity: 1;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 30px;
+}
+
+.left {
+  width: 700px;
+}
+
+.right {
+  width: 300px;
+}
+
+/* CARDS */
+.card {
+  background: #3e4346;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #2a2a2a;
+}
+
+/* PERFIL */
+.profile {
+  padding: 0;
+  overflow: hidden;
+}
+
+.cover {
+  height: 160px;
+  background: linear-gradient(90deg, #89929b, #004182);
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: -70px;
+  margin-left: 25px;
+  border: 4px solid #1f1f1f;
+}
+
+.profile-info {
+  padding: 20px;
+}
+
+.profile-info h2 {
+  font-size: 22px;
+}
+
+.profile-info p {
+  margin-top: 5px;
+  color: #b0b3b8;
+}
+
+.location {
+  font-size: 14px;
+}
+
+/* BOTÕES */
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.primary {
+  background: #0a66c2;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+/* SIDEBAR */
+.user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.user span {
+  font-size: 14px;
+}

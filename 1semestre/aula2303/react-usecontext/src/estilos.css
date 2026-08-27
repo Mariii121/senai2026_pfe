@@ -1,0 +1,8 @@
+.header-light{
+    background-color: rgb(211, 241, 241);
+    color: black;
+}
+.header-dark{
+    background-color: black;
+    color: aliceblue;
+}
